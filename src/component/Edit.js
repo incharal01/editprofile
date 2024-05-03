@@ -93,7 +93,6 @@ const Edit = () => {
                         <input type="text" id="name" placeholder='Enter Name' className='form-control' value={data.name}
                         onChange={e=>setData({...data,name:e.target.value,handleChange})}  />
                         {formErrors.name?(<span id='errorMsg' className='text-danger'>"{formErrors.name}"</span>):null}
-                        
                          {formErrors.name?(<span id='errorMsg' className='text-danger'>{formErrors.phone}</span>):null}
                     </div>
                     <div>
