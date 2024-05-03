@@ -93,26 +93,7 @@ const Edit = () => {
                         <input type="text" id="name" placeholder='Enter Name' className='form-control' value={data.name}
                         onChange={e=>setData({...data,name:e.target.value,handleChange})}  />
                         {formErrors.name?(<span id='errorMsg' className='text-danger'>"{formErrors.name}"</span>):null}
-                    </div>
-                
-                    <div className='mb-2'>
-                    <label htmlFor={'username'}><strong>UserName:</strong> </label>
-                        <input type='text' id='username' placeholder='Enter UserName' className='form-control' value={data.username}
-                        onChange={e=>setData({...data,username:e.target.value,handleChange})} />
-                         {formErrors.username?(<span id='errorMsg' className='text-danger'>{formErrors.username}</span>):null}
-                    </div>
-                
-                    <div className='mb-2'>
-                    <label htmlFor={'emailId'}><strong>EmailId:</strong> </label> 
-                        <input type='text' id='emailId' placeholder='Enter EmailId' className='form-control' value={data.email}
-                        onChange={e=>setData({...data,email:e.target.value,handleChange})} />
-                         {formErrors.email?(<span id='errorMsg' className='text-danger'>{formErrors.email}</span>):null}
-                    </div>
-
-                    <div className='mb-2'>
-                    <label htmlFor={'phone'}><strong>PhoneNumber: </strong></label>
-                        <input for="text"  id='phone' placeholder='Enter PhoneNumber' className='form-control' value={data.phone}
-                        onChange={e=>setData({...data,phone:e.target.value,handleChange})} />
+                        
                          {formErrors.name?(<span id='errorMsg' className='text-danger'>{formErrors.phone}</span>):null}
                     </div>
                     <div>
