@@ -1,0 +1,52 @@
+h1{
+    color:white;
+    padding-top: 20px;
+ }
+ .row{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .container-fluid{
+     background: rgb(65, 64, 64);
+     color:black;
+     position: static;
+     
+ }
+ 
+ .card{
+     position: relative;
+     top: 20vh;
+     border:2px solid rgb(160, 159, 159);
+ }
+ 
+ 
+ img{
+     border-radius: 50%;
+     border: 1px solid rgb(199, 195, 195);
+     margin-top: 20px;
+     padding:6px;
+     width: 30vh;
+     cursor: pointer;
+ }
+ 
+ .card-content{
+     margin-top: 10px;
+ }
+
+ #btn{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+ }
+ .image:hover  #btn{
+    opacity: 1;
+ }
+
+ #editbtn {
+    margin-bottom: 10px;
+ }
+
