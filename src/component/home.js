@@ -13,9 +13,8 @@ const Home = () =>{
         .catch(err => console.log(err));
     },[]);
 
-    const handleclick = () =>{
+    const handleClick = () =>{
         setIndex(()=> Math.floor(Math.random()*users.length));
-        // setIndex((prevValue)=> prevValue+1);
     }
     return(
         <>
@@ -27,11 +26,11 @@ const Home = () =>{
                             <div className='col-lg-8'>
                                 <div className='card'>
                                     <div className='image'>
-                                        <img src={users[index].url} alt={users[index].id}/>
-                                        <button className='btn btn-dark' id='btn' onClick={handleclick}>new</button>
+                                        <img src={users[index].url} alt={users[index].name}/>
+                                        <button className='btn btn-dark' id='btn' onClick={handleClick}>Random Profile</button>
                                     </div>
                                     <div className='card-content'>
-                                        <h4>{users[index].name}</h4>
+                                        <h4 >{users[index].name}</h4>
                                         <h5>{users[index].username}</h5>
                                         <h5>{users[index].email}</h5>
                                         <h5>{users[index].phone}</h5>
